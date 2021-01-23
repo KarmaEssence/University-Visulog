@@ -1,0 +1,379 @@
+commit 2fd38931adb87cc1f7ac59bb85ea2559d4d3b70b
+Merge: d980280 6bb8d4a
+Author: Fatemeh Taghayor <f.taghayor@gmail.com>
+Date:   Tue Nov 24 17:10:47 2020 +0100
+
+    Merge branch 'develop' of gaufre.informatique.univ-paris-diderot.fr:lecorre/visulog into commitsPerDate
+
+commit 6bb8d4afc61e0caa73c560b713faedf10817fba3
+Merge: 83afc8c d8f1b75
+Author: LE CORRE leo <karmaessence@outlook.fr>
+Date:   Tue Nov 24 16:42:21 2020 +0100
+
+    Merge branch 'iss11' into 'develop'
+    
+    Issue #11
+    
+    See merge request lecorre/visulog!5
+
+commit d8f1b75c3c92d2c8e62ecc16da6cbb7baf022314
+Author: TAGHAYOR Ellenor <f.taghayyor@gmail.com>
+Date:   Tue Nov 24 16:42:21 2020 +0100
+
+    Issue #11
+
+commit d980280c8265512bb04fc2cd08cf4750d83d7799
+Author: Fatemeh Taghayor <f.taghayor@gmail.com>
+Date:   Tue Nov 24 15:34:07 2020 +0100
+
+    first commit
+
+commit 83afc8c6fdb9d3c42fbc7427a99a3dab722aa6d3
+Author: mehdi_alg <khali.mehdi.km@gmail.com>
+Date:   Mon Nov 16 17:20:37 2020 +0100
+
+    161120
+
+commit 24fbb2a68f999f479603680d631355fb4c141bf6
+Author: Stephane <berat.stephane@gmail.com>
+Date:   Mon Nov 16 13:13:04 2020 +0100
+
+    import help
+
+commit c09932dc1854e244b6a6249383075eab60f699da
+Merge: d928669 743eccb
+Author: LE CORRE leo <karmaessence@outlook.fr>
+Date:   Mon Nov 16 12:57:32 2020 +0100
+
+    Merge branch 'comhelp' into 'develop'
+    
+    Comhelp
+    
+    See merge request lecorre/visulog!7
+
+commit 743eccb977d52ac99b6f5ce77d0b3def79e6ba79
+Merge: 7ee1a2f d928669
+Author: Berat Stephane <berat.stephane@gmail.com>
+Date:   Sun Nov 15 22:31:02 2020 +0100
+
+    Merge branch 'develop' into 'comhelp'
+    
+    # Conflicts:
+    #   cli/src/main/java/up/visulog/cli/CLILauncher.java
+
+commit 7ee1a2f8f9b9c666151d30920833d906d3b27e4c
+Author: lecorre <karmaessence@outlook.fr>
+Date:   Tue Nov 10 18:31:03 2020 +0100
+
+    verification1
+
+commit d92866994a520c5e07112ed3bc8c6175ddd88723
+Author: mehdi_alg <khali.mehdi.km@gmail.com>
+Date:   Tue Nov 10 17:18:01 2020 +0100
+
+    101120
+
+commit 303be0dd8a84e60e32a22e8e77db065013f3aa1a
+Merge: 0787385 5b4bc06
+Author: KHALI mehdi <khali.mehdi.km@gmail.com>
+Date:   Mon Nov 9 20:48:40 2020 +0100
+
+    Merge branch 'flow' into 'develop'
+    
+    test branch flow
+    
+    See merge request lecorre/visulog!8
+
+commit 5b4bc06935dee98ca6e543bbb27b993e7d66b9a6
+Author: Ghillas <g.immoune94@gmail.com>
+Date:   Mon Nov 9 19:25:28 2020 +0100
+
+    flowbranch
+
+commit c0f1fcc93ba587ad8b57ae2914970a1441bca438
+Author: stephane <berat.stephane@gmail.com>
+Date:   Sat Nov 7 13:08:14 2020 +0100
+
+    commande help
+
+commit fd5b98f3d4744391cf0ac3ea37a4d51df2349838
+Author: Stephane <berat.stephane@gmail.com>
+Date:   Sun Nov 1 14:42:46 2020 +0100
+
+    condition empty
+
+commit 0787385f9f00ee96b29fc880b195eaa713f4e1a1
+Merge: f774457 f22bdce
+Author: TAGHAYOR Ellenor <f.taghayyor@gmail.com>
+Date:   Tue Oct 27 14:50:06 2020 +0100
+
+    Merge branch 'jsonConfig' into 'develop'
+    
+    Issue #19: jsonConfig
+    
+    See merge request lecorre/visulog!6
+
+commit f22bdce54bb02b71a07438cea909627f534a770f
+Author: LE CORRE leo <karmaessence@outlook.fr>
+Date:   Tue Oct 27 14:50:06 2020 +0100
+
+    Issue #19: jsonConfig
+
+commit 14db47242843bd21a0e96f3a8ce02ca62e411cb9
+Author: Stephane <berat.stephane@gmail.com>
+Date:   Mon Oct 26 19:00:15 2020 +0100
+
+    help command
+
+commit b2866d9c914893e0a6d62c44fa75a7bd0436380b
+Author: Stephane <berat.stephane@gmail.com>
+Date:   Mon Oct 26 16:24:55 2020 +0100
+
+    help command
+
+commit f774457ec54a27e7c6c315c6f76ab0422763d264
+Merge: b57dc11 c92a1e6
+Author: KHALI mehdi <khali.mehdi.km@gmail.com>
+Date:   Sun Oct 18 22:18:32 2020 +0200
+
+    Merge branch 'mehdi_translation' into 'develop'
+    
+    commit1810
+    
+    See merge request lecorre/visulog!4
+
+commit c92a1e64e813bbb6c127ac1be2a289a8f04ada04
+Author: mehdi_alg <khali.mehdi.km@gmail.com>
+Date:   Sun Oct 18 14:29:06 2020 +0200
+
+    commit1810
+
+commit b57dc1175909befd48d51b5524479d5b043bd9e5
+Merge: 07a7904 b13093e
+Author: Berat Stephane <berat.stephane@gmail.com>
+Date:   Tue Oct 13 18:45:39 2020 +0200
+
+    Merge branch 'mehdi_translation' into 'develop'
+    
+    1erepartietrad
+    
+    See merge request lecorre/visulog!3
+
+commit b13093eb58e534a23cd808185643abfe180e2943
+Author: Berat Stephane <berat.stephane@gmail.com>
+Date:   Tue Oct 13 18:45:06 2020 +0200
+
+    Update gitrawdata/src/main/java/up/visulog/gitrawdata/Commit.java
+
+commit 07a7904bce1932d529eddc4994ba82355b17cad0
+Merge: 53b11e0 ef3b524
+Author: Omar <hamouda.omar21@gmail.com>
+Date:   Tue Oct 13 18:41:59 2020 +0200
+
+    Merge branch 'develop' of https://gaufre.informatique.univ-paris-diderot.fr/lecorre/visulog into develop
+
+commit 53b11e0deb68e9664d3eb3fbea14ef06d660a08c
+Author: Omar <hamouda.omar21@gmail.com>
+Date:   Tue Oct 13 18:41:33 2020 +0200
+
+    une petite modif du makefile
+
+commit ef3b5240723646b7b8c29be225aa0292b9299efa
+Merge: d56deb4 57903cd
+Author: KHALI mehdi <khali.mehdi.km@gmail.com>
+Date:   Tue Oct 13 18:35:53 2020 +0200
+
+    Merge branch 'traduc' into 'develop'
+    
+    traduction cli config
+    
+    See merge request lecorre/visulog!2
+
+commit d56deb4201518b620e60e8de25091eb901bfa9eb
+Merge: 5c80a6c d27df5a
+Author: Omar <hamouda.omar21@gmail.com>
+Date:   Tue Oct 13 18:10:56 2020 +0200
+
+    Merge branch 'develop' of https://gaufre.informatique.univ-paris-diderot.fr/lecorre/visulog into develop
+
+commit 5c80a6c66498271c14b3aef5ee523f2502741ad8
+Author: Omar <hamouda.omar21@gmail.com>
+Date:   Tue Oct 13 17:06:23 2020 +0200
+
+    petite modif du makefile
+
+commit d27df5a08ebff82ac310736cced5375bfdda944d
+Author: Omar <hamouda.omar21@gmail.com>
+Date:   Tue Oct 13 17:06:23 2020 +0200
+
+    je viens de finir le makefile il est pour l'instant juste basique et on pourra surement etre amener à le modifier
+
+commit 57903cdc213653c9645c811ac4b8b6bb9d5cf6b4
+Author: Stephane <berat.stephane@gmail.com>
+Date:   Sun Oct 11 14:52:56 2020 +0200
+
+    traduction cli config
+
+commit f5371d972ad75cf5cc3a4be2aa42ca6499c36dda
+Merge: b51ab4a bf40984
+Author: Berat Stephane <berat.stephane@gmail.com>
+Date:   Thu Oct 8 17:30:08 2020 +0200
+
+    Merge branch 'htmldirectory' into 'develop'
+    
+    Merge request: issue12
+    
+    See merge request lecorre/visulog!1
+
+commit bf40984690ed8b96cebd5a8988bac0e613bda522
+Author: lecorre <karmaessence@outlook.fr>
+Date:   Thu Oct 8 11:58:56 2020 +0200
+
+    issue12printresult
+
+commit 9b604ab35829c4ea5a91c8f4006663ba16322db2
+Author: lecorre <karmaessence@outlook.fr>
+Date:   Thu Oct 8 11:48:38 2020 +0200
+
+    issue12correction
+
+commit 38d2644327f72b7a7a1a036d6fec040c123dd2cf
+Author: KHALI <khali.mehdi.km@gmail.com>
+Date:   Tue Oct 6 16:04:18 2020 +0200
+
+    1erepartietrad
+
+commit f5623f2a1e61f22cbd159d92ef970ecdc7987422
+Author: lecorre <karmaessence@outlook.fr>
+Date:   Sat Oct 3 18:31:43 2020 +0200
+
+    issue12
+
+commit b51ab4aa8e5c31438f95f4256352d3a3168228e5
+Author: Hammouda Omar <hammouda.omar21@gmail.com>
+Date:   Tue Sep 29 16:57:25 2020 +0200
+
+    Delete groupe.txt
+
+commit 256528178042696f5b78d2ca4bcfe7c08a7c29c6
+Author: Mehdi Khali <mkhali53@g20.script.univ-paris-diderot.fr>
+Date:   Tue Sep 15 16:49:30 2020 +0200
+
+    added_gio
+
+commit 76222f0717f72f1d346a3b950b67252748b74851
+Author: Mehdi Khali <mkhali53@g20.script.univ-paris-diderot.fr>
+Date:   Tue Sep 15 16:43:51 2020 +0200
+
+    contacts
+
+commit 7fa1a620338aec79ade8c77c2edfeba64cfad393
+Merge: f6dfc6f dc58f07
+Author: Aldric Degorre <adegorre@irif.fr>
+Date:   Sun Sep 13 23:19:11 2020 +0200
+
+    Merge branch '18-exception-when-parsing-a-merge-commit' into 'develop'
+    
+    Resolve "Exception when parsing a merge commit"
+    
+    Closes #18
+    
+    See merge request adegorre/visulog!6
+
+commit dc58f07c46052f46b5ce07c09a0b8a572bb084a2
+Author: Aldric Degorre <adegorre@irif.fr>
+Date:   Fri Sep 11 10:27:57 2020 +0200
+
+    Made commit parsing more robust:
+    - uses a Commit builder for more flexibility
+    - a missing field does not prevent building the commit (only a field will be null). It is possible to change this behavior later on and consider that some fields are needed.
+    - unknown fields are just ignored and should not crash the parser
+    - tests were updated so they still pass (but should be completed by feeding the parser with different sort of commit messages with more fields or missing fields)
+
+commit f6dfc6f165aa1581968f984b9a7f8b951a39578f
+Merge: 09f9cbd 1329241
+Author: Aldric Degorre <adegorre@irif.fr>
+Date:   Sun Sep 13 20:32:51 2020 +0200
+
+    Merge branch 'make-it-work-at-SCRIPT' into 'develop'
+    
+    Fixes proxy and truststore for SCRIPT
+    
+    Closes #20
+    
+    See merge request adegorre/visulog!8
+
+commit 1329241dbcf7eae478c33c11032a0138d767731a
+Author: Aldric Degorre <adegorre@irif.fr>
+Date:   Fri Sep 11 20:39:40 2020 +0200
+
+    Fixes proxy and truststore for SCRIPT
+
+commit 09f9cbd706f22ba417b31dba74e5d9d2e3b7c6a5
+Merge: fb7ec21 85cddd6
+Author: Aldric Degorre <adegorre@irif.fr>
+Date:   Fri Sep 11 20:43:08 2020 +0200
+
+    Merge branch 'JDK10-for-gradle' into 'develop'
+    
+    Downgrade to JDK10 (gradle)
+    
+    Closes #16
+    
+    See merge request adegorre/visulog!7
+
+commit 85cddd65295dc2563f108078e44b571893707574
+Author: Aldric Degorre <adegorre@irif.fr>
+Date:   Fri Sep 11 13:31:03 2020 +0200
+
+    Downgrade to JDK10
+
+commit fb7ec21799d59fdf6e6d69c85f052223bd310e13
+Merge: 9e74f15 8f836af
+Author: Colin Gonzalez <colin@nomadic-labs.com>
+Date:   Wed Sep 9 15:11:35 2020 +0200
+
+    Merge branch 'tracer-bullet-code' into 'develop'
+    
+    Tracer bullet code
+    
+    Closes #3
+    
+    See merge request adegorre/visulog!4
+
+commit 8f836af1a4db16d43b09106f0216b2648edeea0e
+Author: Aldric Degorre <adegorre@irif.fr>
+Date:   Wed Sep 9 15:11:35 2020 +0200
+
+    Runnable code!
+    (Now we can start talking about improving things!)
+
+commit 9e74f1581f23aaad21e2b936091d3ce371336e22
+Author: Aldric Degorre <adegorre@irif.fr>
+Date:   Mon Aug 31 11:28:28 2020 +0200
+
+    Update README.md - more modules
+
+commit 7484b0cb7b4e69e09c82ed38549750fa2a77f50c
+Author: Aldric Degorre <adegorre@irif.fr>
+Date:   Thu Aug 27 00:35:19 2020 +0200
+
+    Update README.md - translation...
+
+commit 9aaf6e09cc30909b32c68b4d5bf4ac50f95ecb93
+Author: Aldric Degorre <adegorre@irif.fr>
+Date:   Thu Aug 27 00:33:46 2020 +0200
+
+    Update README.md - some title left untranslated
+
+commit 969e2247156f27f27fec57b13faf6097bf4e2757
+Author: Aldric Degorre <adegorre@irif.fr>
+Date:   Thu Aug 27 00:32:47 2020 +0200
+
+    Update README.md -> in English, with some more details
+
+commit 486d76dbfd24ac65eeeeb16e57ae4fd68c8ecb1c
+Author: Aldric Degorre <adegorre@irif.fr>
+Date:   Thu Aug 27 00:02:55 2020 +0200
+
+    Ajout de README.md avec définition des grandes lignes du sujet.

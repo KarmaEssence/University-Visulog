@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Visulog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"/>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+   
+        <script type="text/javascript" src="core/canvasjs/canvasjs.min.js"></script>
+        <script type="text/javascript" src="core/jquery-1.11.1.min.js"></script>
+        
+        <script type="text/javascript" src="data.js"></script>
+
+        <script type="text/javascript">
+
+            var chartType, textButton, title, yTitle, yFormat, chosenData;
+   
+            function selectChartType(newType){
+                chartType = newType;
+                if(newType==="pie"){
+                    document.querySelector('#buttonText2').innerHTML = "Pie Chart  <em class=\'fa fa-caret-down\'></em>";
+                } else if(newType==="bar"){
+                    document.querySelector('#buttonText2').innerHTML = "Bar Chart  <em class=\'fa fa-caret-down\'></em>";
+                }
+                chartGenerator(textButton, title, yTitle, yFormat, chosenData, newType);
+            }
+
+            function updateData(newTextButton, newTitle, newY_Title, newY_Format, newChosenData, newType){
+                textButton = newTextButton;
+                title = newTitle;
+                yTitle = newY_Title;
+                yFormat = newY_Format;
+                chosenData = newChosenData;
+                chartType = newType;
+            }
+
+            function chartGenerator(newTextButton, newTitle, newY_Title, newY_Format, newChosenData, newType){
+                updateData(newTextButton, newTitle, newY_Title, newY_Format, newChosenData, newType);
+                document.querySelector('#buttonText').innerHTML = textButton;
+                var dataPoints = JSON.parse(chosenData);
+                if(newType==="pie"){
+                    var chart = new CanvasJS.Chart("chartContainer", {
+                    animationEnabled: true,
+                    theme: "light2",
+                    title: {
+                        text: title,
+                        fontFamily: "Noto Sans JP",
+                        fontSize: 32
+                    },
+                    data: [{
+                        type: "pie",
+                        radius: "100%",
+                        startAngle: 240,
+                        indexLabel: "{label} (#percent%)",
+                        dataPoints: dataPoints
+                        }]
+                    });
+                } else if(newType==="bar"){
+                    var chart = new CanvasJS.Chart("chartContainer", {
+                    animationEnabled: true,
+                    theme: "light2",
+                    title: {
+                        text: title,
+                        fontFamily: "Noto Sans JP",
+                        fontSize: 32
+                    },
+                    axisY: {
+                        title: yTitle,
+                        titleFontSize: 20,
+                        includeZero: true
+                    },
+                    data: [{
+                        type: "column",
+                        indexLabelFontFamily: "Noto Sans JP",
+                        yValueFormatString: yFormat,
+                        dataPoints: dataPoints
+                    }]
+                    });
+                }
+                chart.render();
+            }
+
+            window.onload = function(){
+                chartGenerator('Commits Per Developer <em class=\'fa fa-caret-down\'></em>', 'Number of Commits Per Developer', 'Number of Commits', '###,### commit(s)', commitData, 'bar');
+            }
+                
+        </script>
+    </head>
+    
+    <body>
+        <div class="header" id="lockedHeader">
+            <h1>Visulog</h1>
+        </div>
+        <div class="content">
+            <div id="selector">
+                <label id="selectorText">Select a type of graph and data to view:</label>
+                <div class="dropdown">
+                    <button id="buttonText2" onclick="myDropdown2()" class="dropbtn">Bar Chart  <em class="fa fa-caret-down"></em></button>
+                    <div id="selectDropdown2" class="dropdown-content">
+                        <a onclick="selectChartType('bar')">Bar Chart</a>
+                        <a onclick="selectChartType('pie')">Pie Chart</em></a>
+                    </div>
+                    <button id="buttonText" onclick="myDropdown()" class="dropbtn">Commits  <em class="fa fa-caret-down"></em></button>
+                    <div id="selectDropdown" class="dropdown-content">
+                        <a onclick="chartGenerator('Merges  <em class=\'fa fa-caret-down\'></em>', 'Number of Merges Per Developer', 'Number of Merges', '###,### merge(s)', mergeData, chartType)">Merges</a>
+                        <a onclick="chartGenerator('Line Changes  <em class=\'fa fa-caret-down\'></em>', 'Number of Line Changes Per Developer', 'Number of Line Changes', '###,### line change(s)', lineData, chartType)">Line Changes</a>
+                        <a onclick="chartGenerator('Commits Per Developer  <em class=\'fa fa-caret-down\'></em>', 'Number of Commits Per Developer', 'Number of Commits', '###,### commit(s)', commitData, chartType)">Commits Per Developer</a>
+                        <a onclick="chartGenerator('Commits Per Week  <em class=\'fa fa-caret-down\'></em>', 'Number of Commits Per Week', 'Number of Commits', '###,### commit(s)', weekData, chartType)">Commits Per Week</a>
+                        <a onclick="chartGenerator('Commits Per Month <em class=\'fa fa-caret-down\'></em>', 'Number of Commits Per Month', 'Number of Commits', '###,### commit(s)', monthData, chartType)">Commits Per Month</a>
+                    </div>
+                </div>
+            </div>
+            <div id="chart"><div id="chartContainer"></div></div>
+        </div>
+        <div class="footer">
+            <footer>Tool made by: .... </footer>
+        </div>
+        
+        <script>
+    
+        function myDropdown() {
+            document.getElementById("selectDropdown").classList.toggle("show");
+        }
+    
+        function myDropdown2() {
+            document.getElementById("selectDropdown2").classList.toggle("show");
+        }
+    
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+        
+    
+        </script>
+    </body>
+</html>
