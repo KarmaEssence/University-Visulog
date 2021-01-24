@@ -25,6 +25,6 @@ jobs:
     - name: Build with Gradle
       run: gradle build
     - name: Execute main option
-      run: gradle run --args='.. --addPlugin=countEverything --no-auto-open'
+      run: gradle run --args='. --addPlugin=countEverything --no-auto-open'
       
     
