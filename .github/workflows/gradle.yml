@@ -27,15 +27,15 @@ jobs:
     - name: Execute main option
       run: gradle run --args='. --addPlugin=countEverything --no-auto-open'
     - name: Overwrite current data
-      run: gradle run --args='.. --addPlugin=countEverything --overwrite --no-auto-open'
+      run: gradle run --args='. --addPlugin=countEverything --overwrite --no-auto-open'
     - name: Save and delete dir
-      run:  gradle run --args='.. --createOutputDir=Test --deleteOutputDir=Test --no-auto-open'
+      run:  gradle run --args='. --createOutputDir=Test --deleteOutputDir=Test --no-auto-open'
     - name: Save command config
-      run: gradle run --args='.. --addPlugin=countEverything --no-auto-open --justSaveConfigFile=config'  
+      run: gradle run --args='. --addPlugin=countEverything --no-auto-open --justSaveConfigFile=config'  
     - name: load config from file
-      run: gradle run --args='.. --loadConfigFile=ConfigFile/config.json'
+      run: gradle run --args='. --loadConfigFile=ConfigFile/config.json'
     - name: Make dir to save the data
-      run:  gradle run --args='.. --addPlugin=countEverything --createOutputDir=SaveResultTest --overwrite --no-auto-open'
+      run:  gradle run --args='. --addPlugin=countEverything --createOutputDir=SaveResultTest --overwrite --no-auto-open'
 
       
     
